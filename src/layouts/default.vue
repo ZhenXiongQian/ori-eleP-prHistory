@@ -1,17 +1,9 @@
 <template>
   <div>
-    <img
-      alt="Origin.js logo"
-      src="../assets/originjs.png"
-      class="logo logo-large"
-    >
-    <h2>Origin.js</h2>
-    <p>{{ $t("introduction") }}</p>
+    <div style="position: fixed;top: 50px;left: 50px">
+      <router-link class="text-router-link" to="/">home</router-link>
+    </div>
     <router-view />
-    <p class="text-component-desc text-route">
-      {{ $t("currentRoute") }}: '{{ currentRoute.fullPath }}'
-    </p>
-    <sources :list="sourceOpitons" />
   </div>
 </template>
 

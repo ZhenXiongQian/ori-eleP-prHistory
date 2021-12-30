@@ -1,7 +1,7 @@
 <template>
   <main :class="isLight ? 'light' : 'dark'">
     <router-view />
-    <div>
+    <div style="position: fixed;bottom: 50px;right: 50px">
       <button
         type="button"
         @click="changeMode"
@@ -62,3 +62,7 @@ export default {
   align-items: center;
 }
 </style>
+
+<layout>
+layout: home
+</layout>

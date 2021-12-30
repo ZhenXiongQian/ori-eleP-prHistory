@@ -6,6 +6,8 @@ import zh from './locales/zh.json'
 import App from './App.vue'
 import store from './store'
 import routes from 'virtual:plugin-pages'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -24,4 +26,5 @@ const i18n = createI18n({
 })
 
 const app = createApp(App);
+app.use(ElementPlus)
 app.use(router).use(store).use(i18n).mount('#app')
