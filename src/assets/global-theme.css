@@ -238,6 +238,7 @@ code {
   align-items: center;
   border-radius: 0.4rem;
   margin: 1.2rem 0;
+  flex-flow: column;
 }
 
 .router-link div {

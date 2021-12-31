@@ -2,11 +2,7 @@
   <router-view />
   <div class="router-link">
     <div>
-      <router-link
-        class="text-router-link"
-        to="/input-number-undefined-in-form-5049"
-        >input-number-undefined-in-form-5049</router-link
-      >
+      <router-link class="text-router-link" to="/202112">2021-12</router-link>
     </div>
   </div>
 </template>

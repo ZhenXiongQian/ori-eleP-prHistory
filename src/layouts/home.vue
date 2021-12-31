@@ -9,6 +9,7 @@
       />
       <p>created by origin.js</p>
       <sources :list="sourceOpitons" />
+      <router-link to="/">home</router-link>
     </div>
 
     <h2>pr demos for element-plus:</h2>
