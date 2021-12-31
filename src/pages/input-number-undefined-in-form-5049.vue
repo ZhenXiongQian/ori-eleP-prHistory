@@ -2,8 +2,8 @@
   <el-form ref="Form" label-suffix=":" :model="ruleForm">
     <el-form-item label="数字" prop="num" :rules="ruleForm.rules">
       <el-input-number
-          v-model="ruleForm.num"
-          :controls="false"
+        v-model="ruleForm.num"
+        :controls="false"
       ></el-input-number>
     </el-form-item>
     <el-form-item label="当前输入的数字" prop="num">
@@ -17,35 +17,35 @@
 </template>
 
 <script lang="ts">
-import { ref, defineComponent } from 'vue'
+import { ref, defineComponent } from "vue";
 export default defineComponent({
   setup() {
     const ruleForm = ref({
       num: undefined,
-      rules: [{ required: true, message: '请输入数字' }],
-    })
-    const Form = ref()
+      rules: [{ required: true, message: "请输入数字" }],
+    });
+    const Form = ref();
     const submitForm = () => {
       Form.value.validate((valid: any) => {
         if (valid) {
-          alert(`submit success with ${ruleForm.value.num}`)
+          alert(`submit success with ${ruleForm.value.num}`);
         } else {
-          alert(`submit error`)
+          alert(`submit error`);
         }
-        return false
-      })
-    }
+        return false;
+      });
+    };
     const reset = () => {
-      ruleForm.value.num = undefined
-    }
+      ruleForm.value.num = undefined;
+    };
     return {
       ruleForm,
       Form,
       submitForm,
       reset,
-    }
+    };
   },
-})
+});
 </script>
 
 <style lang="scss">

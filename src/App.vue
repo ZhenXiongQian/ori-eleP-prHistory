@@ -1,13 +1,13 @@
 <template>
   <main :class="isLight ? 'light' : 'dark'">
     <router-view />
-    <div style="position: fixed;bottom: 50px;right: 50px">
+    <div style="position: fixed; bottom: 50px; right: 50px">
       <button
         type="button"
         @click="changeMode"
         class="normal-btn theme-ctrl-btn"
       >
-        {{ !isLight ? $t('lightMode') : $t('darkMode') }}
+        {{ !isLight ? $t("lightMode") : $t("darkMode") }}
       </button>
       <button
         type="button"
@@ -21,30 +21,30 @@
 </template>
 
 <script>
-import { ref } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { ref } from "vue";
+import { useI18n } from "vue-i18n";
 
 export default {
-  name: 'App',
+  name: "App",
   setup: () => {
-    const isLight = ref(true)
+    const isLight = ref(true);
 
     const changeMode = () => {
-      isLight.value = !isLight.value
-    }
+      isLight.value = !isLight.value;
+    };
 
-    const { locale } = useI18n()
+    const { locale } = useI18n();
     const changeLocale = () => {
-      if (locale.value === 'en') {
-        locale.value = 'zh'
-      } else if (locale.value === 'zh') {
-        locale.value = 'en'
+      if (locale.value === "en") {
+        locale.value = "zh";
+      } else if (locale.value === "zh") {
+        locale.value = "en";
       }
-    }
+    };
 
-    return { isLight, changeMode, changeLocale }
-  }
-}
+    return { isLight, changeMode, changeLocale };
+  },
+};
 </script>
 
 <style scoped>

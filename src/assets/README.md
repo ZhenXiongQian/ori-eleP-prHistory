@@ -1,4 +1,5 @@
 ## Assets
+
 Store your project resources here.<br/>
 `CSS`, `SASS`, `LESS`, `Stylus` files named starting with `global` are automatically added to the vite global style.<br/>
 For global `CSS` styles, they will be added to the `index.html` and will affect all pages.<br/>

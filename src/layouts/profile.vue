@@ -14,27 +14,27 @@
 </template>
 
 <script>
-import { reactive } from 'vue'
-import { useRouter } from 'vue-router'
+import { reactive } from "vue";
+import { useRouter } from "vue-router";
 
 export default {
-  name: 'Profile',
+  name: "Profile",
   setup() {
     const sourceOpitons = reactive([
       {
-        title: 'github',
-        link: 'https://github.com/originjs/origin.js',
+        title: "github",
+        link: "https://github.com/originjs/origin.js",
       },
       {
-        title: 'docs',
-        link: 'https://originjs.github.io/docs/',
+        title: "docs",
+        link: "https://originjs.github.io/docs/",
       },
-    ])
+    ]);
 
-    const router = useRouter()
-    const { currentRoute } = router
+    const router = useRouter();
+    const { currentRoute } = router;
 
-    return { currentRoute, sourceOpitons }
-  }
-}
+    return { currentRoute, sourceOpitons };
+  },
+};
 </script>
