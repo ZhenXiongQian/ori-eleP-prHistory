@@ -2,10 +2,11 @@
   <router-view />
   <div class="router-link">
     <div>
-      <router-link class="text-router-link" to="/202112">2021-12</router-link>
-    </div>
-    <div>
-      <router-link class="text-router-link" to="/202201">2022-01</router-link>
+      <router-link
+        class="text-router-link"
+        to="/202201/select-v2-set-modelValue-5128"
+        >select-v2-set-modelValue-5128</router-link
+      >
     </div>
   </div>
 </template>
