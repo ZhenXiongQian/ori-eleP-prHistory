@@ -22,6 +22,13 @@
         >select-v2-add-reserve-keyword-5295</router-link
       >
     </div>
+    <div>
+      <router-link
+        class="text-router-link"
+        to="/202201/drawer-add-footer-slot-5404"
+        >drawer-add-footer-slot-5404</router-link
+      >
+    </div>
   </div>
 </template>
 
