@@ -1,43 +1,54 @@
 <template>
-  <el-select-v2
-    v-model="value"
-    :options="options"
-    :multiple="true"
-    placeholder="Please select"
-    style="width: 200px"
-    size="large"
-  ></el-select-v2>
-  <el-button @click="set">设置</el-button>
-  <el-button @click="clear">清空</el-button>
-  <p>{{ value }}</p>
+  <div>
+    <h2>5106</h2>
+    <el-select-v2
+        v-model="value1"
+        :options="options"
+        placeholder="Please select"
+        size="large"
+    ></el-select-v2>
+    <el-button @click="clear1">清空</el-button>
+    <el-button @click="set1">设置</el-button>
+    <p>{{ value1 }}</p>
+  </div>
+  <el-divider></el-divider>
+  <div>
+    <h2>5107</h2>
+    <el-select-v2
+        v-model="value2"
+        :options="options"
+        :multiple="true"
+        placeholder="Please select"
+        style="width: 200px"
+        size="large"
+    ></el-select-v2>
+    <el-button @click="set2">设置</el-button>
+    <el-button @click="clear2">清空</el-button>
+    <p>{{ value2 }}</p>
+  </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref } from "vue";
-export default defineComponent({
-  setup() {
-    const initials = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
-    const value = ref([]);
-    const options = Array.from({ length: 1000 }).map((_, idx) => ({
-      value: `Option ${idx + 1}`,
-      label: `${initials[idx % 10]}${idx}`,
-    }));
-
-    const set = () => {
-      value.value = ["Option 1"];
-    };
-    function clear() {
-      value.value = [];
-    }
-    return {
-      initials,
-      value,
-      options,
-      set,
-      clear,
-    };
-  },
-});
+<script setup lang="ts">
+import { ref } from 'vue'
+const initials = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+const value1 = ref('')
+const value2 = ref([])
+const options = Array.from({ length: 1000 }).map((_, idx) => ({
+  value: `Option ${idx + 1}`,
+  label: `${initials[idx % 10]}${idx}`,
+}))
+const set1 = () => {
+  value1.value = 'Option 1'
+}
+function clear1() {
+  value1.value = ''
+}
+const set2 = () => {
+  value2.value = ['Option 1']
+}
+function clear2() {
+  value2.value = []
+}
 </script>
 
 <style lang="scss">
