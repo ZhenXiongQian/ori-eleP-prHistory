@@ -7,6 +7,9 @@
     <div>
       <router-link class="text-router-link" to="/202201">2022-01</router-link>
     </div>
+    <div>
+      <router-link class="text-router-link" to="/basic">basic</router-link>
+    </div>
   </div>
 </template>
 
