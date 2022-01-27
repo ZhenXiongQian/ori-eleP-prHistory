@@ -2,10 +2,13 @@
   <router-view />
   <div class="router-link">
     <div>
-      <router-link
-        class="text-router-link"
-        to="/basic/affix_basic"
+      <router-link class="text-router-link" to="/basic/affix_basic"
         >affix_basic</router-link
+      >
+    </div>
+    <div>
+      <router-link class="text-router-link" to="/basic/alert_basic"
+        >alert_basic</router-link
       >
     </div>
   </div>

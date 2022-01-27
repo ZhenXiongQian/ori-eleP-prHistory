@@ -2,10 +2,10 @@
   <div>
     <h2>5106</h2>
     <el-select-v2
-        v-model="value1"
-        :options="options"
-        placeholder="Please select"
-        size="large"
+      v-model="value1"
+      :options="options"
+      placeholder="Please select"
+      size="large"
     ></el-select-v2>
     <el-button @click="clear1">清空</el-button>
     <el-button @click="set1">设置</el-button>
@@ -15,12 +15,12 @@
   <div>
     <h2>5107</h2>
     <el-select-v2
-        v-model="value2"
-        :options="options"
-        :multiple="true"
-        placeholder="Please select"
-        style="width: 200px"
-        size="large"
+      v-model="value2"
+      :options="options"
+      :multiple="true"
+      placeholder="Please select"
+      style="width: 200px"
+      size="large"
     ></el-select-v2>
     <el-button @click="set2">设置</el-button>
     <el-button @click="clear2">清空</el-button>
@@ -29,25 +29,25 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-const initials = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
-const value1 = ref('')
-const value2 = ref([])
+import { ref } from "vue";
+const initials = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+const value1 = ref("");
+const value2 = ref([]);
 const options = Array.from({ length: 1000 }).map((_, idx) => ({
   value: `Option ${idx + 1}`,
   label: `${initials[idx % 10]}${idx}`,
-}))
+}));
 const set1 = () => {
-  value1.value = 'Option 1'
-}
+  value1.value = "Option 1";
+};
 function clear1() {
-  value1.value = ''
+  value1.value = "";
 }
 const set2 = () => {
-  value2.value = ['Option 1']
-}
+  value2.value = ["Option 1"];
+};
 function clear2() {
-  value2.value = []
+  value2.value = [];
 }
 </script>
 
