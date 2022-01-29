@@ -11,6 +11,11 @@
         >alert_basic</router-link
       >
     </div>
+    <div>
+      <router-link class="text-router-link" to="/basic/alert_description"
+        >alert_description</router-link
+      >
+    </div>
   </div>
 </template>
 
