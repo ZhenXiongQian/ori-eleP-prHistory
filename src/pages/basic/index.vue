@@ -21,6 +21,11 @@
         >avatar_fallback</router-link
       >
     </div>
+    <div>
+      <router-link class="text-router-link" to="/basic/avatar_fit"
+      >avatar_fit</router-link
+      >
+    </div>
   </div>
 </template>
 
