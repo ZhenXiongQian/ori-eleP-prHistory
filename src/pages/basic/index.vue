@@ -23,7 +23,12 @@
     </div>
     <div>
       <router-link class="text-router-link" to="/basic/avatar_fit"
-      >avatar_fit</router-link
+        >avatar_fit</router-link
+      >
+    </div>
+    <div>
+      <router-link class="text-router-link" to="/basic/badge_basic"
+        >badge_basic</router-link
       >
     </div>
   </div>
