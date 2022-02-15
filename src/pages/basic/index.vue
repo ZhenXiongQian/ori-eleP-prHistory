@@ -31,6 +31,11 @@
         >badge_basic</router-link
       >
     </div>
+    <div>
+      <router-link class="text-router-link" to="/basic/border_radius"
+        >border_radius</router-link
+      >
+    </div>
   </div>
 </template>
 
