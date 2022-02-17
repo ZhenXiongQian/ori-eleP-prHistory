@@ -41,6 +41,11 @@
         >badge_customize</router-link
       >
     </div>
+    <div>
+      <router-link class="text-router-link" to="/basic/badge_max"
+        >badge_max</router-link
+      >
+    </div>
   </div>
 </template>
 
