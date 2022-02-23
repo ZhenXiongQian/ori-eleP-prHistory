@@ -15,6 +15,13 @@
         >increase-(in)activeText-of-switch-6140</router-link
       >
     </div>
+    <div>
+      <router-link
+        class="text-router-link"
+        to="/202202/increase-(in)activeText-of-switch-6140"
+        >select-add-collapseTagsTooltip-6245</router-link
+      >
+    </div>
   </div>
 </template>
 
