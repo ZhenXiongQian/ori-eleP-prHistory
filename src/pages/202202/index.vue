@@ -22,6 +22,13 @@
         >select-add-collapseTagsTooltip-6245</router-link
       >
     </div>
+    <div>
+      <router-link
+        class="text-router-link"
+        to="/202202/selectV2-add-collapseTagsTooltip-6266"
+        >selectV2-add-collapseTagsTooltip-6266</router-link
+      >
+    </div>
   </div>
 </template>
 
