@@ -8,6 +8,13 @@
         >menu-item-change-backgroundColor-6371</router-link
       >
     </div>
+    <div>
+      <router-link
+        class="text-router-link"
+        to="/202203/tooltip-disabled-6467"
+        >tooltip-disabled-6467</router-link
+      >
+    </div>
   </div>
 </template>
 
